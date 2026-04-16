@@ -4,39 +4,62 @@
   <img src="./assets/grimoire-cover.png" alt="TGV-Grimoire" width="220" />
 </p>
 
-> A bilingual cybersecurity prompt library by [TheGr8Val](https://github.com/thegr8val)
+<p align="center">
+  <img src="https://img.shields.io/badge/prompts-26-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/modules-6-blueviolet?style=flat-square" />
+  <img src="https://img.shields.io/badge/language-EN%20%2F%20ES-teal?style=flat-square" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
+</p>
 
-**TGV-Grimoire** is a curated collection of LLM prompts engineered for cybersecurity practitioners — analysts, hunters, and engineers who want to leverage AI models in their workflows without reinventing the wheel every time.
-
-Every prompt is battle-tested, documented with metadata, and designed to be immediately useful in real environments.
-
----
-
-## Modules
-
-| Module | Prompts | Description | Status |
-|--------|---------|-------------|--------|
-| [`/hunting`](./hunting/) | 11 | Threat hunting — IOC triage, actor profiling, log analysis, Sigma/YARA/KQL/SPL generation | Active |
-| [`/malware-analysis`](./malware-analysis/) | 3 | String deobfuscation, C2 fingerprinting, packer identification | Active |
-| [`/red-team`](./red-team/) | 3 | Tabletop exercises, detection gap analysis, payload obfuscation brainstorm | Active |
-| [`/osint`](./osint/) | 3 | Passive recon checklists, persona analysis, lookalike domain generation | Active |
-| [`/reporting`](./reporting/) | 3 | Executive summaries, remediation tickets, incident postmortems | Active |
-| [`/blue-team`](./blue-team/) | 3 | Detection rule review, analyst playbooks, crown jewels mapping | Active |
+<p align="center">
+  <em>A bilingual cybersecurity prompt library by <a href="https://github.com/TheGr8Val">TheGr8Val</a></em>
+</p>
 
 ---
 
-## How prompts are organized
+## About
 
-Each module contains two categories:
+**TGV-Grimoire** is a curated collection of LLM prompts engineered for cybersecurity practitioners — analysts, threat hunters, detection engineers, and red teamers who want to leverage AI models in their daily workflows without reinventing the wheel every time.
 
-- **`llm-analysis/`** — Prompts designed for direct LLM interaction (ChatGPT, Claude, Gemini, etc.). Feed these data, ask questions, get structured analysis.
-- **`automation-api/`** — Prompts engineered for programmatic use via API. Optimized for consistent, parseable output (JSON, YAML, Sigma, etc.).
+Every prompt is:
+- 🧪 **Battle-tested** in real or lab environments
+- 🗂️ **Documented with metadata** — author, use case, model tested, language, tags
+- 🔁 **Ready to use** — fill in the `[PLACEHOLDERS]` and send to your model of choice
+- 🌐 **Bilingual** — English primary, Spanish sections labeled `[ES]`
+
+Two types of prompts in every module:
+- 💬 **`llm-analysis/`** — For direct LLM chat interaction. Feed data, get structured analysis.
+- ⚙️ **`automation-api/`** — For programmatic API use. Output is JSON, YAML, Sigma, KQL, SPL — no prose.
 
 ---
 
-## Prompt metadata format
+## 🗂️ Modules
 
-Every prompt file starts with a YAML metadata header:
+| Module | Prompts | Description |
+|--------|:-------:|-------------|
+| 🎯 [`/hunting`](./hunting/) | **11** | Threat hunting — IOC triage, actor profiling, log analysis, Sigma / YARA / KQL / SPL generation |
+| 🦠 [`/malware-analysis`](./malware-analysis/) | **3** | String deobfuscation, C2 protocol fingerprinting, packer identification |
+| 🗡️ [`/red-team`](./red-team/) | **3** | Tabletop exercise builder, detection gap analysis, payload obfuscation brainstorm |
+| 🔍 [`/osint`](./osint/) | **3** | Passive recon checklists, persona authenticity analysis, lookalike domain generation |
+| 📋 [`/reporting`](./reporting/) | **3** | Executive incident summaries, pentest findings → remediation tickets, incident postmortems |
+| 🛡️ [`/blue-team`](./blue-team/) | **3** | Detection rule review, analyst response playbooks, crown jewels mapping |
+
+---
+
+## 🚀 Usage
+
+```bash
+git clone https://github.com/TheGr8Val/TGV-Grimoire.git
+cd TGV-Grimoire/hunting/llm-analysis
+```
+
+Open any prompt file, substitute the `[PLACEHOLDER]` values with your data, and send it to your model of choice (Claude, GPT-4o, Gemini, etc.).
+
+---
+
+## 🧬 Prompt metadata format
+
+Every prompt starts with a YAML header:
 
 ```yaml
 ---
@@ -56,35 +79,26 @@ tags:
 
 ---
 
-## Usage
+## 🤝 Contributing
 
-Clone the repo and use prompts directly:
+Contributions are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines, metadata format, and the tag taxonomy.
 
-```bash
-git clone https://github.com/thegr8val/TGV-Grimoire.git
-cd TGV-Grimoire/hunting/llm-analysis
-```
+## 🔒 Security
 
-Copy a prompt, substitute the `[PLACEHOLDER]` values with your data, and send it to your model of choice.
+Found a prompt that could cause harm or a sensitive file accidentally committed? See [SECURITY.md](./SECURITY.md) — please report privately, not via public issues.
 
 ---
 
-## Contributing
-
-Contributions are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
----
-
-## [ES] Descripcion
+## 🌐 [ES] Descripcion
 
 **TGV-Grimoire** es una coleccion bilingue de prompts de ciberseguridad para analistas, hunters e ingenieros que quieren aprovechar modelos de IA en sus flujos de trabajo.
 
 Cada prompt incluye metadatos (autor, caso de uso, modelo probado, idioma, etiquetas) y esta listo para usarse en entornos reales.
 
-Los placeholders se indican con `[MAYUSCULAS_EN_CORCHETES]`.
+Los placeholders se indican con `[MAYUSCULAS_EN_CORCHETES]`. Las notas en espanol aparecen en secciones marcadas `[ES]`.
 
 ---
 
-## License
+## 📄 License
 
 [MIT](./LICENSE) — TheGr8Val, 2026
