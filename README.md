@@ -9,6 +9,9 @@
   <img src="https://img.shields.io/badge/modules-6-blueviolet?style=flat-square" />
   <img src="https://img.shields.io/badge/language-EN%20%2F%20ES-teal?style=flat-square" />
   <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
+  <a href="https://buymeacoffee.com/thegr8val">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=flat-square"/>
+  </a>
 </p>
 
 <p align="center">
@@ -96,6 +99,14 @@ Found a prompt that could cause harm or a sensitive file accidentally committed?
 Cada prompt incluye metadatos (autor, caso de uso, modelo probado, idioma, etiquetas) y esta listo para usarse en entornos reales.
 
 Los placeholders se indican con `[MAYUSCULAS_EN_CORCHETES]`. Las notas en espanol aparecen en secciones marcadas `[ES]`.
+
+---
+
+## ☕ Support / Apoya el Proyecto
+
+If this helps you work smarter in your security workflows, consider buying me a coffee.
+
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow)](https://buymeacoffee.com/thegr8val)
 
 ---
 
